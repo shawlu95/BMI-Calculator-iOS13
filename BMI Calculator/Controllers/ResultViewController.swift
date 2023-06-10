@@ -17,8 +17,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(bmiString)
-        // Do any additional setup after loading the view.
+        bmiLabel.text = bmiString
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
