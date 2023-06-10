@@ -9,10 +9,13 @@
 import Foundation
 
 struct Calculator {
-    var bmi: Float = 0.0
+    var bmi: Float?
     
     func getBmiValue() -> String {
-        return String(format: "%.1f", bmi)
+        if let safeBMI = bmi {
+            return String(format: "%.1f", safeBMI)
+        }
+        return "0.0"
     }
     
     mutating func calculateBMI(height: Float, weight: Float) {
