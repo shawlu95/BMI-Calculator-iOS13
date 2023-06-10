@@ -10,17 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func heightSliderChanged(_ sender: UISlider) {
-        print(String.init(format: "%.2f", sender.value))
+        heightLabel.text = String.init(format: "%.2f", sender.value) + "m"
+    
     }
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
-        print(Int(sender.value))
+        weightLabel.text = String.init(format: "%.0f", sender.value) + "Kg"
     }
 }
 

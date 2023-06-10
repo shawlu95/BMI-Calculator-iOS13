@@ -123,6 +123,10 @@
                             <constraint firstAttribute="trailing" secondItem="DpU-Gs-T27" secondAttribute="trailing" id="wXv-E8-Ye0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="Xcz-1j-2c9" id="8hJ-VP-OBE"/>
+                        <outlet property="weightLabel" destination="LTF-aL-8qu" id="IpG-NV-Syk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
