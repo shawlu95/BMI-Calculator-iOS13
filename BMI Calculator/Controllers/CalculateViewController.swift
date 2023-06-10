@@ -35,5 +35,12 @@ class CalculateViewController: UIViewController {
         let bmi = weight / pow(height, 2)
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! ResultViewController // downcasting
+            destinationVC.bmiString = "24.0"
+        }
+    }
 }
 
