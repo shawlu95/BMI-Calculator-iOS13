@@ -9,9 +9,9 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
-    @IBOutlet weak var adviceLabel: UILabel!
+    
     @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var adviceLabel: UILabel!
     
     var bmiString: String?
     var advice: String?
@@ -21,7 +21,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         bmiLabel.text = bmiString
         adviceLabel.text = advice
-        self.view.backgroundColor = color
+        view.backgroundColor = color
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
