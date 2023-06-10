@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var bmiValue = "19.0"
+    var bmiValue: String = "19.0"
     
     override func viewDidLoad() {
         super.viewDidLoad()
